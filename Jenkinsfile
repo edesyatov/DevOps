@@ -19,8 +19,8 @@ pipeline {
     stages {
         stage("Этап") {
             steps {
-              bat "Сообщение из Этапа"
-              bat "echo Переменная envString =${envString}"
+              bat "Message from step"
+              bat "echo Variable envString =${envString}"
               script{
                 scannerHome = tool "sonar-scanner"
               }
