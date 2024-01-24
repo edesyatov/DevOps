@@ -27,11 +27,7 @@ pipeline {
      stage("Синтаксический контроль") {
             steps {
                 script {
-                    try {
-                        bat "chcp 65001\n vrunner syntax-check"
-                    } catch(Exception Exc) {
-                        currentBuild.result = 'UNSTABLE'
-                    }
+                   bat "chcp 65001\n vrunner syntax-check"
                 }
             }
         }
