@@ -19,8 +19,12 @@ pipeline {
     stages {
         stage("step") {
             steps {
-              bat "Message from step"
+              bat "echo Message from step"
+              bat "echo Message from step"
+              script {
+                scannerHome = tool "sonar-scanner"
+              }
              }
         }
-           }
+    }
 }
