@@ -18,16 +18,16 @@ pipeline {
         }
     }
     stages {
-         stage("Создание тестовой базы") {
+        stage("Создание тестовой базы") {
             steps {
                 bat "chcp 65001\n vrunner init-dev --dt C:\\DevOps\\dt\\demo.dt --db-user Администратор --src src/cf"
             }
-        }
-    }
-     stage("Синтаксический контроль") {
+        }    
+        stage("Синтаксический контроль") {
             steps {
                 bat "chcp 65001\n vrunner syntax-check"
-                
             }
         }
+    }
+    
 }
