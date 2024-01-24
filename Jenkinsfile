@@ -17,14 +17,10 @@ pipeline {
         }
     }
     stages {
-        stage("step") {
+         stage("Создание тестовой базы") {
             steps {
-              bat "echo Message from step"
-              bat "echo variable envString = ${envString}"
-              script {
-                scannerHome = tool "sonar-scanner"
-              }
-             }
+                bat "chcp 65001\n vrunner init-dev --dt C:\\DevOps\\dt\\demo.dt --db-user Администратор --src src/cf"
+            }
         }
     }
 }
