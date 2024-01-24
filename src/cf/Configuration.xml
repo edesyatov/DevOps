@@ -229,6 +229,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Role>ПолныеПрава</Role>
 			<Catalog>Организации</Catalog>
 			<Catalog>Номенклатура</Catalog>
 		</ChildObjects>
