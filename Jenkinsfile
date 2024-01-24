@@ -26,9 +26,8 @@ pipeline {
     }
      stage("Синтаксический контроль") {
             steps {
-                script {
-                   bat "chcp 65001\n vrunner syntax-check"
-                }
+                bat "chcp 65001\n vrunner syntax-check"
+                
             }
         }
 }
