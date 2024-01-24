@@ -17,7 +17,7 @@ pipeline {
         }
     }
     stages {
-        stage("Этап") {
+        stage("step") {
             steps {
               bat "Message from step"
               bat "echo Variable envString =${envString}"
