@@ -20,12 +20,7 @@ pipeline {
         stage("step") {
             steps {
               bat "Message from step"
-              bat "echo Variable envString =${envString}"
-              script{
-                scannerHome = tool "sonar-scanner"
-              }
-
-            }
+             }
         }
            }
 }
