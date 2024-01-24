@@ -7,7 +7,8 @@ pipeline {
     }
     post {
         always {
-            bat "echo always"        
+            allure includeProperties: false, jdk: '', results: [[path: 'out/syntax-check/allure']]
+            junit allowEmptyResults: true, testResults: 'out/syntax-check/junit/junit.xml'        
         }
         failure {
             bat "echo failure"
@@ -23,4 +24,15 @@ pipeline {
             }
         }
     }
+     stage("Синтаксический контроль") {
+            steps {
+                script {
+                    try {
+                        bat "chcp 65001\n vrunner syntax-check"
+                    } catch(Exception Exc) {
+                        currentBuild.result = 'UNSTABLE'
+                    }
+                }
+            }
+        }
 }
