@@ -46,6 +46,16 @@ pipeline {
                 }
             }
         }
+        stage("Анализ кода SonarQube") {
+            steps {
+                script {
+                    scannerHome = tool name: 'sonar-scanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+                }
+                withSonarQubeEnv("Sonar") {
+                    bat "${scannerHome}/bin/sonar-scanner -Dsonar.projectVersion=${BUILD_ID}"
+                }
+            }
+        }
     }
     
 }
