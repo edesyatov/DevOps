@@ -220,8 +220,8 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
-			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<ModalityUseMode>UseWithWarnings</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>UseWithWarnings</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
 			<CompatibilityMode>Version8_3_22</CompatibilityMode>
@@ -232,8 +232,15 @@
 			<Role>ПолныеПрава</Role>
 			<Role>ЧтениеОрганизации</Role>
 			<Role>ДобавлениеИзменениеОрганизации</Role>
+			<CommonModule>ай_РаботаСHTTP</CommonModule>
+			<CommonModule>ОбщегоНазначения</CommonModule>
+			<CommonModule>ай_РаботаСGigachat</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
+			<Constant>ай_ClientSecretGC</Constant>
+			<Constant>ай_ШаблонЗапросаGC</Constant>
 			<Catalog>Организации</Catalog>
 			<Catalog>Номенклатура</Catalog>
+			<Catalog>fish_ОписаниеНоменклатурыДляСайта</Catalog>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
