@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d244d98-8e29-490a-9cb9-666a03c0e93f">
+  <producedTypes>
+    <managerType typeId="110f4300-87d2-4efb-b1ce-855a25777efb" valueTypeId="afe21f7a-3841-4297-a86d-adbfe93e920e"/>
+    <valueManagerType typeId="2a0091e3-f5be-4bc4-afe7-a7a6d56932e6" valueTypeId="16934a1e-fa02-4542-a6d1-54677ace4002"/>
+    <valueKeyType typeId="2f92a9e0-d370-4ac2-8b8e-9f76de06d81e" valueTypeId="329a4b5d-ab18-4c7b-882c-7d9e0aec4573"/>
+  </producedTypes>
+  <name>ай_ШаблонЗапросаGC</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон запроса (Giga Chat)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

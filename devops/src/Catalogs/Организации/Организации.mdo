@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f22668a6-9c0c-47d5-9c86-750e6d9c433d">
+  <producedTypes>
+    <objectType typeId="0f023b83-66c0-4bea-9260-ffbc7b56bf63" valueTypeId="2220e73c-d831-43e6-9bd1-1b962e15207f"/>
+    <refType typeId="6bcc00ea-d7ad-455a-8c7f-e84b45ec636a" valueTypeId="5a410283-c05b-42d9-8bca-6a2136f678d4"/>
+    <selectionType typeId="a96ffb2a-f3ab-4922-8d61-2930aec6e5f8" valueTypeId="94a2365b-3fca-4221-a785-bc4525020d78"/>
+    <listType typeId="ec623e50-5d40-4711-abcc-46151b838c1d" valueTypeId="a7a41739-6983-47ad-b6c2-445c708c663d"/>
+    <managerType typeId="ee51ca3e-5cf2-4f28-af71-fd2070d709af" valueTypeId="9340a2a1-6df9-4d61-999d-34e083df8a50"/>
+  </producedTypes>
+  <name>Организации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Организации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Организации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c858c611-6850-411b-9f1e-5c80ab73f490">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

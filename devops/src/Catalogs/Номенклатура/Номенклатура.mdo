@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45b29e74-8d14-4e1d-9ab0-72a497936e49">
+  <producedTypes>
+    <objectType typeId="0944be74-d178-48d7-85aa-81aed087e2e1" valueTypeId="558d8961-9a9a-43d7-a674-f2104ffeae6f"/>
+    <refType typeId="e6ae0fc9-fd6b-4331-b071-598211853a11" valueTypeId="25a69da4-280a-474b-b143-f88853a30571"/>
+    <selectionType typeId="c4d08852-41a9-4fed-b35a-52264e2352f6" valueTypeId="1b99e76e-aecd-49f9-952c-bfe9f21d0daa"/>
+    <listType typeId="8a51728b-e75f-4be2-b77e-d92823829ee6" valueTypeId="e77ae050-8c97-447a-a89d-a433a48f45b2"/>
+    <managerType typeId="15fcde1a-b314-4f95-81ed-547dbd060e6c" valueTypeId="65ba8e47-dcea-41bc-bd93-1c96d58f71ea"/>
+  </producedTypes>
+  <name>Номенклатура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Номенклатура.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Номенклатура.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="6a35aeb5-0768-456f-b331-842299584f89">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8232d403-a909-4976-bd8f-99097c5348bf">
+    <name>fish_ОписаниеДляСайта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Fish описание для сайта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.fish_ОписаниеНоменклатурыДляСайта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ed7cf764-2ca8-44f9-98e6-9c36e9c85d5f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

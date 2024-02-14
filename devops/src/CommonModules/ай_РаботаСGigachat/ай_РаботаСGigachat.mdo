@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="701b8510-817b-485d-89da-39e4619661a7">
+  <name>ай_РаботаСGigachat</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с Gigachat</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>
